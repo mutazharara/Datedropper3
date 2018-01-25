@@ -1377,8 +1377,8 @@
 			if(!picker.element.hasClass('picker-modal')){
 				var
 					input = picker.input,
-					left = input.offset().left + input.outerWidth()/2,
-					top = input.offset().top + input.outerHeight();
+					left =  input.outerWidth()/2,
+					top =   input.outerHeight();
 				picker.element.css({
 					'left' : left,
 					'top' : top
@@ -2067,7 +2067,7 @@
 						class: 'picker'
 					})
 				})
-				.appendTo('body');
+				.appendTo($("input[data-id='"+id+"']").closest('.input-prepend'));
 
 				picker = {
 					id : id,
